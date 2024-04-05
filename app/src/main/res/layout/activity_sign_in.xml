@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_light"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:baselineAligned="false">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ellipse_shadow_1" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/logo_img" />
+
+        </FrameLayout>
+
+        <TableRow
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold_vm"
+                android:paddingStart="5dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="5dp"
+                android:text="@string/username"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="RtlSymmetry" />
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_field_shape"
+            android:layout_gravity="center_horizontal"
+            >
+
+
+            <EditText
+                android:id="@+id/usernameEnter"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@null"
+                android:fontFamily="@font/inter_semibold"
+                android:hint="@string/enter_your_username"
+                android:inputType="textPersonName|textEmailAddress"
+                android:paddingStart="5dp"
+                android:textSize="16sp"
+
+                tools:ignore="RtlSymmetry,TouchTargetSizeCheck">
+
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold_vm"
+                android:paddingStart="5dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="5dp"
+                android:text="@string/password"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="RtlSymmetry" />
+
+
+        </TableRow>
+
+
+
+
+        <TableRow
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_field_shape"
+            android:layout_gravity="center_horizontal">
+
+            <EditText
+                android:id="@+id/editTextTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@null"
+                android:ems="10"
+                android:fontFamily="@font/inter_semibold"
+                android:hint="@string/enter_your_password"
+                android:inputType="textPassword"
+                android:paddingStart="5dp"
+                android:textSize="16sp"
+
+                tools:ignore="RtlSymmetry,TouchTargetSizeCheck" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/forgotPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold_vm"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="20dp"
+                android:text="@string/forgot_your_password"
+                android:textAlignment="textEnd"
+                android:textColor="@color/yellow_70_op"
+                android:textSize="13sp"
+                tools:ignore="RtlSymmetry" />
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+            >
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/inter_bold_vm"
+                android:textSize="16sp"
+                android:background="@drawable/button_shape"
+                android:backgroundTintMode="src_over"/>
+    <!--            android:background="@drawable/button_shape"-->
+
+        </TableRow>
+
+    </LinearLayout>
+</ScrollView>

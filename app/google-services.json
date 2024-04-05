@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "813194431491",
+    "project_id": "volleyball-master",
+    "storage_bucket": "volleyball-master.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:813194431491:android:40be0d80f11ad694c35236",
+        "android_client_info": {
+          "package_name": "eone.grim.volleymaster"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCffIl79idWcwdzPwlgI0_yWmzyvcaqlQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
