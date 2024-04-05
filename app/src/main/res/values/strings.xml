@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <string name="app_name">VolleyMaster</string>
+    <string name="enter_your_username">Enter your username</string>
+    <string name="username">Username</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="login">Log in</string>
+    <string name="password">Password</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="email">Email</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="register">Register</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="log_in"><u>Log in</u></string>
+    <string name="logo">Logo</string>
+    <string name="logo_shadow">Logo shadow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+
+    <string name="ek_img_content">ExportKit Image</string>
+    <string name="welcome_to_string">Welcome to</string>
+    <string name="volleymaster_string">Volleymaster</string>
+    <string name="your_ultimate_volleyball_companion__string">Your ultimate volleyball companion!</string>
+    <string name="skill_tutorials">Skill\n
+    Tutorials</string>
+    <string name="motivationText1">-Start small, practice\n consistently, and watch your\n game reach new heights.</string>
+    <string name="pick_your_path">Pick Your Path</string>
+    <string name="beginner">Beginner</string>
+    <string name="intermediate">Intermediate</string>
+    <string name="or_pro">Or pro</string>
+    <string name="select_your_level_choose_your_focus_and_let_s_boost_your_game_your_journey_your_pace">Select your level, choose your focus, and let\'s boost your game. Your journey, your pace.</string>
+    <string name="goal_tracker">Goal Tracker</string>
+    <string name="visualize_your_journey">Visualize your journey</string>
+    <string name="monitor_your_achievements">Monitor your achievements</string>
+    <string name="community_challenges">Community Challenges</string>
+    <string name="join_group_goals_and_compete_with_friends">Join group goals and compete with friends.</string>
+    <string name="dive_into_a_world_where_teamwork_meets_competition">Dive into a world where teamwork meets competition.</string>
+    <string name="we_love_our_users_become_one_of_them_now">We love our users Become one of them now!</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="create_an_account">Create an Account</string>
+    <string name="sign_up_now_to_get_started_with_an_account">Sign up now to get started with an account.</string>
+    <string name="continue_with_other">Continue with Other</string>
+</resources>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light"
+    android:orientation="vertical"
+    tools:context=".ui.onboard.FirstOnBoardScreen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/welcome_to_string"
+            android:textColor="@color/yellow_white_light_100"
+            android:textSize="45sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/volleyMasterText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:text="@string/volleymaster_string"
+            android:textColor="@color/brown"
+            android:textSize="50sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcomeText" />
+
+        <TextView
+            android:id="@+id/ultimateCompanionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/your_ultimate_volleyball_companion__string"
+            android:textColor="@color/orange"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/volleyMasterText" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="249dp"
+            android:layout_height="246dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="236dp"
+            android:src="@drawable/volley_ball_wob"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ultimateCompanionText" />
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="285dp"
+            android:layout_height="282dp"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="208dp"
+            android:src="@drawable/volley_ball_wob"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ultimateCompanionText" />
+
+        <ImageView
+            android:layout_width="244dp"
+            android:layout_height="253dp"
+            android:layout_marginTop="116dp"
+            android:layout_marginEnd="184dp"
+            android:src="@drawable/volley_ball_wob"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <ImageView
+            android:id="@+id/vector1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="136dp"
+            android:src="@drawable/line30"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+        <ImageView
+            android:id="@+id/vector2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="44dp"
+            android:src="@drawable/line30"
+            app:layout_constraintStart_toEndOf="@+id/vector1"
+            app:layout_constraintTop_toTopOf="@+id/vector1" />
+
+        <ImageView
+            android:id="@+id/vector3"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/line30"
+            app:layout_constraintStart_toEndOf="@+id/vector2"
+            app:layout_constraintTop_toTopOf="@+id/vector2" />
+
+        <ImageView
+            android:id="@+id/vector4"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="76dp"
+            android:layout_marginEnd="96dp"
+            android:src="@drawable/line150"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vector3" />
+
+        <ImageView
+            android:id="@+id/vector5"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/line150"
+            app:layout_constraintEnd_toStartOf="@+id/vector4"
+            app:layout_constraintTop_toTopOf="@+id/vector4" />
+
+        <ImageView
+            android:id="@+id/vector6"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/line150"
+            app:layout_constraintEnd_toStartOf="@+id/vector5"
+            app:layout_constraintTop_toTopOf="@+id/vector5" />
+
+        <ImageView
+            android:id="@+id/nextPage"
+            android:layout_width="398dp"
+            android:layout_height="83dp"
+            android:src="@drawable/vector_10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

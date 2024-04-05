@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vm_nav"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="eone.grim.volleymaster.ui.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment"
+            app:popUpTo="@id/splashFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_authStartPage"
+            app:destination="@id/authStartPage"
+            app:popUpTo="@id/splashFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="eone.grim.volleymaster.ui.onboard.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" >
+        <action
+            android:id="@+id/action_viewPagerFragment_to_authStartPage"
+            app:destination="@id/authStartPage"
+            app:popUpTo="@id/viewPagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/authStartPage"
+        android:name="eone.grim.volleymaster.ui.auth.AuthStartPage"
+        android:label="fragment_auth__start__page"
+        tools:layout="@layout/fragment_auth__start__page" />
+</navigation>
