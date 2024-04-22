@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.viewpager2.widget.ViewPager2
 import eone.grim.volleymaster.R
+import eone.grim.volleymaster.utils.ViewPagerAdapter
 
 
 class ViewPagerFragment : Fragment() {

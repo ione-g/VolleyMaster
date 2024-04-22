@@ -1,4 +1,4 @@
-package eone.grim.volleymaster.ui.onboard
+package eone.grim.volleymaster.utils
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

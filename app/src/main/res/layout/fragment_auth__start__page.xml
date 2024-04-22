@@ -31,6 +31,8 @@
         android:fontFamily="@font/inter_semibold"
         android:text="@string/continue_with_google"
         android:textAllCaps="false"
+
+
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
