@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light"
+    tools:context=".ui.home.playerstats.collecting.PSGoalFragment">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/back"
+        app:layout_constraintEnd_toStartOf="@+id/playerStatsCollectingProgress"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ProgressBar
+        android:id="@+id/playerStatsCollectingProgress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:max="7"
+        android:progress="7"
+        android:progressDrawable="@drawable/vm_p_s_progress_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="-3dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/inter_semibold"
+        android:shadowColor="@color/yellow_30_op"
+        android:shadowDy="10"
+        android:shadowRadius="3"
+        android:text="@string/_7div7"
+        android:textColor="@color/yellow"
+        app:layout_constraintStart_toEndOf="@+id/playerStatsCollectingProgress"
+        app:layout_constraintTop_toTopOf="@+id/playerStatsCollectingProgress" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_semibold"
+        android:text="@string/what_s_your_goal"
+        android:textColor="@color/yellow"
+        android:textSize="25sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/goalRG"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.414" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_semibold"
+        android:text="@string/this_helps_us_create_your_personalized_plan"
+        android:textAlignment="center"
+        android:textColor="@color/yellow_50_op"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/goalRG"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView6"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <RadioGroup
+        android:id="@+id/goalRG"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" >
+
+        <RadioButton
+
+            android:id="@+id/elevateGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/vm_p_s_radio_button_2"
+            android:button="@android:color/transparent"
+            android:text="@string/elevate_your_game"
+            android:textColor="@color/yellow"
+            android:textSize="20sp"
+            android:fontFamily="@font/inter_semibold"
+            android:padding="15dp"
+            android:paddingStart="45dp"
+            android:layout_marginTop="30dp"
+            tools:ignore="RtlSymmetry" />
+
+        <RadioButton
+
+            android:id="@+id/refineTechnique"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/vm_p_s_radio_button_2"
+            android:button="@android:color/transparent"
+            android:text="@string/refine_technique"
+            android:textColor="@color/yellow"
+            android:textSize="20sp"
+            android:fontFamily="@font/inter_semibold"
+            android:padding="15dp"
+            android:paddingStart="45dp"
+            android:layout_marginTop="30dp"
+            tools:ignore="RtlSymmetry" />
+
+        <RadioButton
+
+            android:id="@+id/improveSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/vm_p_s_radio_button_2"
+            android:button="@android:color/transparent"
+            android:text="@string/improve_speed"
+            android:textColor="@color/yellow"
+            android:textSize="20sp"
+            android:fontFamily="@font/inter_semibold"
+            android:padding="15dp"
+            android:paddingStart="45dp"
+            android:layout_marginTop="30dp"
+            tools:ignore="RtlSymmetry" />
+
+        <RadioButton
+
+            android:id="@+id/increaseFlexibility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/vm_p_s_radio_button_2"
+            android:button="@android:color/transparent"
+            android:text="@string/increase_flexibility"
+            android:textColor="@color/yellow"
+            android:textSize="20sp"
+            android:fontFamily="@font/inter_semibold"
+            android:padding="15dp"
+            android:paddingStart="45dp"
+            android:layout_marginTop="30dp"
+            tools:ignore="RtlSymmetry" />
+
+        <RadioButton
+
+            android:id="@+id/gainWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/vm_p_s_radio_button_2"
+            android:button="@android:color/transparent"
+            android:text="@string/gain_weight"
+            android:textColor="@color/yellow"
+            android:textSize="20sp"
+            android:fontFamily="@font/inter_semibold"
+            android:padding="15dp"
+            android:paddingStart="45dp"
+            android:layout_marginTop="30dp"
+            tools:ignore="RtlSymmetry" />
+        <RadioButton
+
+            android:id="@+id/loseWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/vm_p_s_radio_button_2"
+            android:button="@android:color/transparent"
+            android:text="@string/lose_weight"
+            android:textColor="@color/yellow"
+            android:textSize="20sp"
+            android:fontFamily="@font/inter_semibold"
+            android:padding="15dp"
+            android:paddingStart="45dp"
+            android:layout_marginTop="30dp"
+            tools:ignore="RtlSymmetry" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/button_shape"
+        android:elevation="0dp"
+        android:visibility="invisible"
+        android:fontFamily="@font/inter_semibold"
+        android:text="@string/complete"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

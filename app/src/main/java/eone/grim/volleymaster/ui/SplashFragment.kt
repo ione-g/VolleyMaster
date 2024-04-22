@@ -24,12 +24,10 @@ class SplashFragment : Fragment() {
 
         Handler(Looper.getMainLooper()).postDelayed({
             if (onBoardingFinished()) {
-                startActivity(Intent(activity,LoginActivity::class.java))
-//                findNavController().navigate(R.id.action_splashFragment_to_authStartPage)
+                findNavController().navigate(R.id.action_splashFragment_to_authStartPage)
             } else {
                 findNavController().navigate(R.id.action_splashFragment_to_viewPagerFragment)
-            }},2000)
-
+            }},500)
         return inflater.inflate(R.layout.fragment_splash, container, false)
     }
 

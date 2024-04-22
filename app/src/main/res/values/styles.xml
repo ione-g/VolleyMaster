@@ -4,4 +4,29 @@
         <item name="android:background">@color/black_overlay</item>
         <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
     </style>
+
+    <style name="NumberPickerTheme">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="colorControlNormal">@android:color/transparent</item>
+        <item name="android:textColorPrimary">@color/yellow</item>
+        <item name="android:shadowRadius">10</item>
+        <item name="android:shadowColor">@color/yellow_30_op</item>
+        <item name="android:shadowDy">20</item>
+        <item name="android:shadowDx">10</item>
+        <item name="android:textColorSecondary">@color/yellow_70_op</item>
+        <item name="android:textSize">60sp</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+    </style>
+    <style name="PrimaryTextView">
+        <item name="android:textColorPrimary">@color/yellow</item>
+        <item name="android:textSize">25sp</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+    </style>
+
+    <style name="BottomNavigationView">
+        <item name="android:background">@color/white</item>
+        <item name="itemIconTint">@color/nav_color</item>
+        <item name="itemTextColor">@color/nav_color</item>
+
+    </style>
 </resources>

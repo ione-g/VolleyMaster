@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="eone.grim.volleymaster.ui.home.PagesActivity">
+
+    <item
+        android:id="@+id/action_home"
+        android:title="@string/home"
+        android:icon="@drawable/baseline_home_24"
+        />
+    <item
+        android:id="@+id/action_trainings"
+        android:title="@string/trainings"
+        android:icon="@drawable/baseline_train_24"
+        />
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:icon="@drawable/baseline_settings_24"
+         />
+    <item
+        android:id="@+id/action_profile"
+        android:title="@string/profile"
+        android:icon="@drawable/baseline_profile_24"
+
+        />
+</menu>
