@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/FullScreenWidthHeight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light"
+    android:padding="16dp"
+    tools:context=".ui.main.pages.profile.ProfileEditingFragment"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/editProfilePhoto"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/profileIV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/profile_photo" />
+
+            <ImageView
+                android:id="@+id/pencilIV"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:layout_alignEnd="@+id/profileIV"
+                android:layout_alignBottom="@+id/profileIV"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/edit_pencil" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/usernameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/username"
+            android:textColor="@color/black_75_op"
+
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editProfilePhoto"
+            />
+
+        <EditText
+            android:id="@+id/usernameEnter"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="@string/username"
+            android:background="@drawable/button_shape"
+            android:paddingStart="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/usernameTV" />
+        <TextView
+            android:id="@+id/phoneTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/phone_number"
+            android:textColor="@color/black_75_op"
+
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/usernameEnter"
+            />
+
+        <EditText
+            android:id="@+id/phoneEnter"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:inputType="phone"
+            android:text="@string/phone_number"
+            android:background="@drawable/button_shape"
+            android:paddingStart="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phoneTV" />
+
+        <TextView
+            android:id="@+id/emailTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/email"
+            android:textColor="@color/black_75_op"
+
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phoneEnter"
+            />
+
+        <EditText
+            android:id="@+id/emailEnter"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:inputType="textEmailAddress"
+            android:text="@string/email"
+            android:background="@drawable/button_shape"
+            android:paddingStart="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailTV" />
+<TextView
+            android:id="@+id/birthdayTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/date_of_birth"
+            android:textColor="@color/black_75_op"
+
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailEnter"
+            />
+<!--        TODO add dialog of date picker-->
+        <EditText
+            android:id="@+id/birthdayEnter"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="@string/date_of_birth"
+            android:background="@drawable/button_shape"
+            android:paddingStart="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/birthdayTV" />
+
+        <TextView
+            android:id="@+id/genderTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/gender"
+            android:textColor="@color/black_75_op"
+
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/birthdayEnter"
+            />
+
+        <Spinner
+            android:id="@+id/genderEnter"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:spinnerMode="dropdown"
+            android:background="@drawable/button_shape"
+            android:paddingStart="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/genderTV" />
+
+        <TextView
+            android:id="@+id/heightTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/height"
+            android:textColor="@color/black_75_op"
+
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/genderEnter"
+            />
+
+        <EditText
+            android:id="@+id/heightEnter"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:inputType="numberDecimal"
+            android:hint="@string/height"
+            android:background="@drawable/button_shape"
+            android:paddingStart="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/heightTV" />
+        <TextView
+            android:id="@+id/weightTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/weight"
+            android:textColor="@color/black_75_op"
+
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/heightEnter"
+            />
+
+        <EditText
+            android:id="@+id/weightEnter"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:inputType="numberDecimal"
+            android:hint="@string/weight"
+            android:background="@drawable/button_shape"
+            android:paddingStart="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weightTV" />
+
+        <TextView
+            android:id="@+id/heightJumpTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/vertical_jump_height"
+            android:textColor="@color/black_75_op"
+
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weightEnter"
+            />
+
+        <EditText
+            android:id="@+id/heightJumpEnter"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:inputType="numberDecimal"
+            android:hint="@string/vertical_jump_height"
+            android:background="@drawable/button_shape"
+            android:paddingStart="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/heightJumpTV" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

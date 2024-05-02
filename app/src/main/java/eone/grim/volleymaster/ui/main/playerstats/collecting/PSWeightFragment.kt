@@ -11,10 +11,13 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import eone.grim.volleymaster.R
 import eone.grim.volleymaster.customviews.PickerLayoutManager
+import eone.grim.volleymaster.data.model.PlayerStats
+import eone.grim.volleymaster.data.provider.PlayerStatsProvider
 import eone.grim.volleymaster.databinding.FragmentPSWeightBinding
 
-class PSWeightFragment : Fragment() {
+class PSWeightFragment : Fragment(),PlayerStatsProvider {
 
+    private var weight = 30
     private val binding: FragmentPSWeightBinding by lazy {
         FragmentPSWeightBinding.inflate(layoutInflater)
     }
@@ -47,6 +50,7 @@ class PSWeightFragment : Fragment() {
             override fun onScrollSelection(view: View) {
                 // Update UI here when the scroll stops
                 val position = rv.getChildLayoutPosition(view)
+                weight = sa.data[position]
                 "${sa.data[position]}".also { binding.weight.text = it }
             }
         })
@@ -81,6 +85,10 @@ class PSWeightFragment : Fragment() {
         class ScaleViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         }
 }
+
+    override fun provideData(playerStats: PlayerStats) {
+        playerStats.weight = weight
+    }
 
 
 }

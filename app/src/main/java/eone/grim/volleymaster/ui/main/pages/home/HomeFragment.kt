@@ -55,6 +55,11 @@ class HomeFragment : Fragment(){
         fragmentTransaction?.commit()
 
 
+        binding.seeAllTrainings.setOnClickListener {
+            findNavController().popBackStack()
+            findNavController().navigate(R.id.action_trainings)
+        }
+
         setUpRV()
     }
 
@@ -71,7 +76,6 @@ class HomeFragment : Fragment(){
             trainingAdapter.notifyDataSetChanged()
             recyclerView.adapter = trainingAdapter
         }
-        trainingViewModel.fetchTrainingShortData()
     }
 
     private fun showCurrentUsername() {

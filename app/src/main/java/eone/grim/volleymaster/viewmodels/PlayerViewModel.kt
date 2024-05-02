@@ -7,6 +7,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 
 class PlayerViewModel : ViewModel() {
+
     private val _username = MutableLiveData<String>()
     val username: LiveData<String> = _username
 

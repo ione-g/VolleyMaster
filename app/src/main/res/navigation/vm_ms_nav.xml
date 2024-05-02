@@ -9,14 +9,29 @@
         android:name="eone.grim.volleymaster.ui.main.pages.home.HomeFragment"
         android:label="Home"
         tools:layout="@layout/fragment_home" >
-
+        <action
+            android:id="@+id/action_home_to_training_detailed"
+            app:destination="@id/action_training_detailed"
+            app:popUpTo="@id/action_home"
+            />
     </fragment>
     <fragment
         android:id="@+id/action_trainings"
         android:name="eone.grim.volleymaster.ui.main.pages.trainings.TrainingsFragment"
         android:label="Trainings"
         tools:layout="@layout/fragment_trainings">
-    
+        <action
+            android:id="@+id/action_trainings_to_training_detailed"
+            app:destination="@id/action_training_detailed"
+            app:popUpTo="@id/action_home"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/action_training_detailed"
+        android:name="eone.grim.volleymaster.ui.main.pages.trainings.TrainingDetailedFragment"
+        android:label="Trainings"
+        tools:layout="@layout/fragment_training_detailed">
+
     </fragment>
     <fragment
         android:id="@+id/action_settings"
@@ -27,5 +42,15 @@
         android:id="@+id/action_profile"
         android:name="eone.grim.volleymaster.ui.main.pages.profile.ProfileFragment"
         android:label="Profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profile_to_profileEditing"
+            app:destination="@id/profileEditingFragment"
+            app:popUpTo="@id/action_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileEditingFragment"
+        android:name="eone.grim.volleymaster.ui.main.pages.profile.ProfileEditingFragment"
+        android:label="fragment_profile_editing"
+        tools:layout="@layout/fragment_profile_editing" />
 </navigation>

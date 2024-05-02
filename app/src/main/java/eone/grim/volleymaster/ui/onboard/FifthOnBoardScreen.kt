@@ -26,7 +26,7 @@ class FifthOnBoardScreen : Fragment() {
         val viewPager2 = activity?.findViewById<ViewPager2>(R.id.viewPager)
 
         binding.nextPage.setOnClickListener {
-            viewPager2?.currentItem = 1
+            viewPager2?.currentItem = 5
         }
 
         return view

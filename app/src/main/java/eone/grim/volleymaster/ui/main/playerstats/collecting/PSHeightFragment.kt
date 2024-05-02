@@ -7,14 +7,17 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import eone.grim.volleymaster.R
+import eone.grim.volleymaster.data.model.PlayerStats
+import eone.grim.volleymaster.data.provider.PlayerStatsProvider
 import eone.grim.volleymaster.databinding.FragmentPSHeightBinding
 import eone.grim.volleymaster.ui.main.playerstats.collecting.utils.BasicNumberPickerAdapter
 
-class PSHeightFragment : Fragment() {
+class PSHeightFragment : Fragment(),PlayerStatsProvider {
 
     private val binding: FragmentPSHeightBinding by lazy {
         FragmentPSHeightBinding.inflate(layoutInflater)
     }
+    private var height = 180
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -37,11 +40,16 @@ class PSHeightFragment : Fragment() {
         adapter.values = (110..240).toList()
         binding.heightPicker.adapter = adapter
         binding.heightPicker.itemHeight = 300
-        binding.heightPicker.isCyclic = true
-        binding.heightPicker.setOnValueSelectedListener{ _,_ ->
+        binding.heightPicker.isCyclic = false
+        binding.heightPicker.setOnValueSelectedListener{ _,pos ->
+            height = adapter.values[pos]
             binding.next.visibility = View.VISIBLE
         }
         return view
+    }
+
+    override fun provideData(playerStats: PlayerStats) {
+        playerStats.height = height
     }
 
 

@@ -58,8 +58,8 @@
             app:layout_constraintTop_toBottomOf="@+id/profileIV"
             app:sl_cornerRadius="20dp"
             app:sl_dy="3dp"
-            app:sl_shadowColor="@color/gray"
-            app:sl_shadowRadius="4dp">
+            app:sl_shadowColor="@color/hint"
+            app:sl_shadowRadius="3dp">
 
             <FrameLayout
                 android:id="@+id/planProgress"

@@ -1,7 +1,6 @@
 package eone.grim.volleymaster.utils
 
-import android.net.Uri
-import android.util.Log
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,13 +8,11 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.os.bundleOf
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import eone.grim.volleymaster.R
 import eone.grim.volleymaster.data.model.TrainingItem
-import eone.grim.volleymaster.viewmodels.TrainingViewModel
 
 class TrainingAdapter(private val trainingList: List<TrainingItem>,
                       private val navController: NavController
@@ -44,9 +41,10 @@ class TrainingAdapter(private val trainingList: List<TrainingItem>,
         holder.trainingName.text = trainingItem.trainingName
         holder.trainingDesc.text = trainingItem.trainingDesc
         holder.trainingGoButton.setOnClickListener {
-            navController.popBackStack()
             val bundle = bundleOf("trainingId" to trainingItem.trainingID)
             navController.navigate(R.id.action_trainings, bundle)
+            navController.navigate(R.id.action_trainings_to_training_detailed, bundle)
+
         }
     }
 
