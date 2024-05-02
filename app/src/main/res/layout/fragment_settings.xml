@@ -1,14 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.pages.SettingsFragment">
+    android:background="@color/bg_light"
+    tools:context=".ui.home.pages.home.HomeFragment"
+    android:padding="20dp"
+    >
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
-</FrameLayout>
+
+        <TextView
+            android:id="@+id/settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/inter_bold_vm"
+            android:text="@string/settings"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/notificationButton"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_shape_2"
+            android:drawableStart="@drawable/notification_yellow"
+            android:drawableEnd="@drawable/arrow_2"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/notifications"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settings" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/passwordManagerButton"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@drawable/button_shape_2"
+            android:drawableStart="@drawable/fingerprint_yellow"
+            android:drawableEnd="@drawable/arrow_2"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/password_manager"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notificationButton" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/deleteAccountButton"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@drawable/button_shape_2"
+            android:drawableStart="@drawable/delete_yellow"
+            android:drawableEnd="@drawable/arrow_2"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Delete account"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordManagerButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

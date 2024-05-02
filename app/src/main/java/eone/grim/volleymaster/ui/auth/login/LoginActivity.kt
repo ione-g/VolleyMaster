@@ -26,6 +26,10 @@ class LoginActivity : AppCompatActivity() {
         login()
     }
 
+    private fun storeInRoom() {
+        //TODO Implement logic of storing UserData in Room
+    }
+
     private fun login() {
 
 

@@ -5,27 +5,29 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import com.google.firebase.auth.FirebaseAuth
 import eone.grim.volleymaster.R
-import eone.grim.volleymaster.databinding.ActivityHomeBinding
+import eone.grim.volleymaster.databinding.ActivityPagesBinding
 
 class PagesActivity : AppCompatActivity() {
 
-    private val binding: ActivityHomeBinding by lazy {
-        ActivityHomeBinding.inflate(layoutInflater)
+    private val binding: ActivityPagesBinding by lazy {
+        ActivityPagesBinding.inflate(layoutInflater)
     }
     private lateinit var auth : FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        setContentView(binding.root)
+
+        val navHostFragment = supportFragmentManager.findFragmentById(binding.psv.id) as NavHostFragment
+        val navController = navHostFragment.navController
+
         if (isCollectingPlayerStatsFinished()) {
-            setContentView(
-                R.layout.fragment_pages_controller
-            )
-        }
-        else {
-            setContentView(binding.root)
+            navController.navigate(R.id.pagesControllerFragment)
         }
 
 
