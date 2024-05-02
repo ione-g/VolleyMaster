@@ -5,6 +5,10 @@
         <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
     </style>
 
+
+    <style name="ProgressBar" parent="Widget.AppCompat.ProgressBar">
+        <item name="color">@color/white</item>
+    </style>
     <style name="NumberPickerTheme">
         <item name="android:background">@android:color/transparent</item>
         <item name="colorControlNormal">@android:color/transparent</item>
@@ -29,4 +33,12 @@
         <item name="itemTextColor">@color/nav_color</item>
 
     </style>
+
+    <style name="FullScreenWidthHeight">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+    </style>
+
+
 </resources>

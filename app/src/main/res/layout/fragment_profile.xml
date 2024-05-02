@@ -1,14 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/FullScreenWidthHeight"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.pages.ProfileFragment">
+    android:background="@color/bg_light"
+    android:padding="16dp"
+    tools:context=".ui.home.pages.profile.ProfileFragment"
+    >
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <RelativeLayout
+            android:id="@+id/editProfile"
+            android:layout_marginTop="40dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/profileIV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/profile_photo"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                />
+
+            <ImageView
+                android:id="@+id/pencilIV"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:layout_alignEnd="@+id/profileIV"
+                android:layout_alignBottom="@+id/profileIV"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/edit_pencil" />
+        </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/profileButton"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_marginTop="20dp"
+                android:drawableStart="@drawable/profile_yellow"
+                android:drawableEnd="@drawable/arrow_2"
+                android:background="@drawable/button_shape_2"
+                android:fontFamily="@font/inter_semibold"
+                android:drawablePadding="20dp"
+                android:text="@string/your_profile"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintTop_toBottomOf="@+id/editProfile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/paymentButton"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:drawableStart="@drawable/credit_card_yellow"
+                android:drawableEnd="@drawable/arrow_2"
+                android:background="@drawable/button_shape_2"
+                android:fontFamily="@font/inter_semibold"
+                android:drawablePadding="20dp"
+                android:text="@string/payment_methods"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintTop_toBottomOf="@+id/profileButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/settingsButton"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:drawableStart="@drawable/setting_yellow"
+                android:drawableEnd="@drawable/arrow_2"
+                android:background="@drawable/button_shape_2"
+                android:fontFamily="@font/inter_semibold"
+                android:drawablePadding="20dp"
+                android:text="@string/action_settings"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintTop_toBottomOf="@+id/paymentButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/helpCenterButton"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:drawableStart="@drawable/help_center_yellow"
+                android:drawableEnd="@drawable/arrow_2"
+                android:background="@drawable/button_shape_2"
+                android:fontFamily="@font/inter_semibold"
+                android:drawablePadding="20dp"
+                android:text="@string/help_center"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintTop_toBottomOf="@+id/settingsButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/privacyPolicyButton"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:drawableStart="@drawable/privacy_policy_yellow"
+                android:drawableEnd="@drawable/arrow_2"
+                android:background="@drawable/button_shape_2"
+                android:fontFamily="@font/inter_semibold"
+                android:drawablePadding="20dp"
+                android:text="@string/privacy_policy"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintTop_toBottomOf="@+id/helpCenterButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
