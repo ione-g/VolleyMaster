@@ -4,26 +4,31 @@
     android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.PagesControllerFragment"
+    tools:context=".ui.main.PagesControllerFragment"
     android:background="@color/bg_light">
-    <androidx.constraintlayout.widget.ConstraintLayout
-    android:id="@+id/pageReplacer"
-    android:layout_width="0dp"
-    android:layout_height="0dp"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintBottom_toTopOf="@id/pagesNavigation"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constrainedHeight="true" />
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/pageReplacer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/pagesNavigation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:navGraph="@navigation/vm_ms_nav"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:layout_constrainedHeight="true"
+        />
     <com.google.android.material.bottomnavigation.BottomNavigationView
-    android:id="@+id/pagesNavigation"
-    android:layout_width="0dp"
-    android:layout_height="60dp"
-    style="@style/BottomNavigationView"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:menu="@menu/menu_home"/>
+        android:id="@+id/pagesNavigation"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        style="@style/BottomNavigationView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/menu_home"
+
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -1,27 +1,26 @@
-package eone.grim.volleymaster.ui.home.pages.home
+package eone.grim.volleymaster.ui.main.pages.home
 
 import android.annotation.SuppressLint
 import android.app.ActionBar.LayoutParams
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import eone.grim.volleymaster.R
 import eone.grim.volleymaster.data.model.TrainingItem
 import eone.grim.volleymaster.databinding.FragmentHomeBinding
-import eone.grim.volleymaster.ui.home.PagesControllerFragment
 import eone.grim.volleymaster.utils.TrainingAdapter
 import eone.grim.volleymaster.viewmodels.PlayerViewModel
 import eone.grim.volleymaster.viewmodels.TrainingViewModel
 
-class HomeFragment : Fragment(),TrainingAdapter.TrainingItemListener {
+class HomeFragment : Fragment(){
     val binding: FragmentHomeBinding by lazy {
         FragmentHomeBinding.inflate(layoutInflater)
     }
@@ -67,7 +66,7 @@ class HomeFragment : Fragment(),TrainingAdapter.TrainingItemListener {
         var trainingAdapter:TrainingAdapter
         trainingViewModel = ViewModelProvider(requireActivity())[TrainingViewModel::class.java]
         trainingViewModel.trainingShort.observe(viewLifecycleOwner) {
-            trainingAdapter = TrainingAdapter(it,this)
+            trainingAdapter = TrainingAdapter(it,findNavController())
 
             trainingAdapter.notifyDataSetChanged()
             recyclerView.adapter = trainingAdapter
@@ -82,13 +81,9 @@ class HomeFragment : Fragment(),TrainingAdapter.TrainingItemListener {
         playerViewModel.username.observe(viewLifecycleOwner, Observer { username ->
             binding.usernameTV.text = username ?: "Who are you?"
         })
-
         // Fetch user data
         playerViewModel.fetchUserData()
     }
 
-    override fun onItemSelected(trainingItem: TrainingItem) {
-        val trainingViewModel: TrainingViewModel = ViewModelProvider(requireActivity())[TrainingViewModel::class.java]
-        trainingViewModel.selectItem(trainingItem)
-    }
+
 }

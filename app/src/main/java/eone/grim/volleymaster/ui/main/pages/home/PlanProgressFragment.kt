@@ -1,11 +1,10 @@
-package eone.grim.volleymaster.ui.home.pages.home
+package eone.grim.volleymaster.ui.main.pages.home
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import eone.grim.volleymaster.R
 import eone.grim.volleymaster.databinding.FragmentPlanProgressBinding
 
 

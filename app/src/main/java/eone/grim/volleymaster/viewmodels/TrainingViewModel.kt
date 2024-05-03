@@ -37,10 +37,5 @@ class TrainingViewModel: ViewModel() {
             }
     }
 
-    private val _selectedTrainingItem = MutableLiveData<TrainingItem>()
-    val selectedTrainingItem: LiveData<TrainingItem> get() = _selectedTrainingItem
 
-    fun selectItem(trainingItem: TrainingItem) {
-        _selectedTrainingItem.value = trainingItem
-    }
 }
