@@ -9,7 +9,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import eone.grim.volleymaster.databinding.ActivityRegisterBinding
 import eone.grim.volleymaster.ui.auth.login.LoginActivity
-import eone.grim.volleymaster.ui.home.PagesActivity
+import eone.grim.volleymaster.ui.main.PagesActivity
 
 class RegisterActivity : AppCompatActivity() {
 

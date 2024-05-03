@@ -1,4 +1,4 @@
-package eone.grim.volleymaster.ui.home.playerstats.collecting
+package eone.grim.volleymaster.ui.main.playerstats.collecting
 
 import android.content.Context
 import android.os.Bundle
@@ -9,12 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import eone.grim.volleymaster.R
-import eone.grim.volleymaster.databinding.FragmentPSAgeBinding
 import eone.grim.volleymaster.databinding.FragmentPSGoalBinding
-import eone.grim.volleymaster.databinding.FragmentPSHeightBinding
-import eone.grim.volleymaster.databinding.FragmentPSJumpHeightBinding
-import eone.grim.volleymaster.databinding.FragmentPSVolleyLevelBinding
-import eone.grim.volleymaster.ui.home.playerstats.collecting.utils.BasicNumberPickerAdapter
 
 class PSGoalFragment : Fragment() {
 

@@ -1,0 +1,31 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vm_ms_nav"
+    app:startDestination="@id/action_home">
+
+    <fragment
+        android:id="@+id/action_home"
+        android:name="eone.grim.volleymaster.ui.main.pages.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/action_trainings"
+        android:name="eone.grim.volleymaster.ui.main.pages.trainings.TrainingsFragment"
+        android:label="Trainings"
+        tools:layout="@layout/fragment_trainings">
+    
+    </fragment>
+    <fragment
+        android:id="@+id/action_settings"
+        android:name="eone.grim.volleymaster.ui.main.pages.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/action_profile"
+        android:name="eone.grim.volleymaster.ui.main.pages.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

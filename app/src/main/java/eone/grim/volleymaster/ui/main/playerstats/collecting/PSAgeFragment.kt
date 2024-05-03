@@ -1,18 +1,14 @@
-package eone.grim.volleymaster.ui.home.playerstats.collecting
+package eone.grim.volleymaster.ui.main.playerstats.collecting
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.widget.AppCompatTextView
-import androidx.compose.ui.unit.dp
 import androidx.viewpager2.widget.ViewPager2
 import eone.grim.volleymaster.R
 import eone.grim.volleymaster.databinding.FragmentPSAgeBinding
-import eone.grim.volleymaster.ui.home.playerstats.collecting.utils.BasicNumberPickerAdapter
-import io.woong.wheelpicker.ValuePickerAdapter
-import io.woong.wheelpicker.ValuePickerView
+import eone.grim.volleymaster.ui.main.playerstats.collecting.utils.BasicNumberPickerAdapter
 
 
 class PSAgeFragment : Fragment() {

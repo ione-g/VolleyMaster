@@ -1,12 +1,9 @@
-package eone.grim.volleymaster.ui.home
+package eone.grim.volleymaster.ui.main
 
 import android.content.Context
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.fragment.findNavController
 import com.google.firebase.auth.FirebaseAuth
 import eone.grim.volleymaster.R
 import eone.grim.volleymaster.databinding.ActivityPagesBinding

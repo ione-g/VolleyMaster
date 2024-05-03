@@ -1,6 +1,7 @@
-package eone.grim.volleymaster.ui.home.pages.trainings
+package eone.grim.volleymaster.ui.main.pages.trainings
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -15,15 +16,16 @@ import eone.grim.volleymaster.R
  */
 class TrainingsFragment : Fragment() {
 //    // TODO: Rename and change types of parameters
-//    private var param1: String? = null
+    private var param1: String? = null
 //    private var param2: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-//            param1 = it.getString(ARG_PARAM1)
+            param1 = it.getString("trainingId")
 //            param2 = it.getString(ARG_PARAM2)
         }
+        Log.i("trainingId",param1.toString())
     }
 
     override fun onCreateView(

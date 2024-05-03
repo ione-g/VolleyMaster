@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/viewPagerFragment2"
-        android:name="eone.grim.volleymaster.ui.home.playerstats.collecting.ViewPagerFragment"
+        android:name="eone.grim.volleymaster.ui.main.playerstats.collecting.ViewPagerFragment"
         android:label="fragment_p_s_view_pager"
         tools:layout="@layout/fragment_p_s_view_pager" >
         <action
@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/pagesControllerFragment"
-        android:name="eone.grim.volleymaster.ui.home.PagesControllerFragment"
+        android:name="eone.grim.volleymaster.ui.main.PagesControllerFragment"
         android:label="fragment_pages_controller"
         tools:layout="@layout/fragment_pages_controller" />
 </navigation>
