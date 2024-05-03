@@ -1,4 +1,4 @@
-package eone.grim.volleymaster.ui.home.playerstats.collecting.utils
+package eone.grim.volleymaster.ui.main.playerstats.collecting.utils
 
 import android.view.LayoutInflater
 import android.view.View

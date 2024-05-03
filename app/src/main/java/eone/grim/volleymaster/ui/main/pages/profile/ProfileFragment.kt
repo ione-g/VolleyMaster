@@ -1,4 +1,4 @@
-package eone.grim.volleymaster.ui.home.pages.profile
+package eone.grim.volleymaster.ui.main.pages.profile
 
 import android.os.Bundle
 import android.view.LayoutInflater

@@ -10,7 +10,7 @@ import com.google.firebase.auth.FirebaseAuth
 import eone.grim.volleymaster.R
 import eone.grim.volleymaster.databinding.FragmentAuthStartPageBinding
 import eone.grim.volleymaster.ui.auth.register.RegisterActivity
-import eone.grim.volleymaster.ui.home.PagesActivity
+import eone.grim.volleymaster.ui.main.PagesActivity
 
 
 class AuthStartPage : Fragment() {
