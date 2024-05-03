@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="150dp"
     android:paddingStart="30dp"
-    android:paddingEnd="30dp"
+    android:paddingEnd="10dp"
     android:background="@drawable/button_shape"
-    tools:context=".ui.home.pages.home.PlanProgressFragment">
+    tools:context=".ui.main.pages.home.PlanProgressFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -18,11 +18,13 @@
             android:id="@+id/planTV"
             android:layout_width="149dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:fontFamily="@font/inter_bold_vm"
             android:text="@string/my_plan_for_today"
             android:textColor="@color/white"
             android:textSize="32sp"
-            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/frameLayout"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -31,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/inter_semibold"
-            android:text="10"
+            android:text="@string/zero"
             android:textColor="@color/white"
             android:textSize="12sp"
 
@@ -43,53 +45,57 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="2dp"
             android:fontFamily="@font/inter_semibold"
-            android:text="Completed"
+            android:text="@string/completed"
             android:textColor="@color/white"
             android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/frameLayout"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@id/progressTV"
             app:layout_constraintTop_toTopOf="@id/progressTV" />
+
         <FrameLayout
+            android:id="@+id/frameLayout"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="-10dp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-             >
-
-            <TextView
-                android:id="@+id/progressPercents"
+            <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:fontFamily="@font/inter_bold_vm"
-                android:text="0"
-                android:textColor="@color/bg_light"
-                android:textSize="32sp" />
+                android:layout_gravity="center">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/progressPercents"
-                android:layout_marginStart="10dp"
-                android:layout_marginBottom="6dp"
-                android:layout_toEndOf="@+id/progressPercents"
-                android:fontFamily="@font/inter_bold_vm"
-                android:text="@string/percent"
-                android:textColor="@color/bg_light"
-                android:textSize="12sp" />
-        </RelativeLayout>
+                <TextView
+                    android:id="@+id/progressPercents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/inter_bold_vm"
+                    android:text="@string/zero"
+                    android:textColor="@color/bg_light"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/progressPercents"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_toEndOf="@+id/progressPercents"
+                    android:fontFamily="@font/inter_bold_vm"
+                    android:text="@string/percent"
+                    android:textColor="@color/bg_light"
+                    android:textSize="12sp" />
+            </RelativeLayout>
 
             <ProgressBar
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:indeterminateOnly="false"
-                android:max="6"
-                android:progress="3"
+                android:max="0"
+                android:progress="0"
                 android:progressDrawable="@drawable/vm_progress_bar_circular"
 
                 />

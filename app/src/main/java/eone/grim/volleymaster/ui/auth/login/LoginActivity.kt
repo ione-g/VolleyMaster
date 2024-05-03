@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import eone.grim.volleymaster.databinding.ActivitySignInBinding
-import eone.grim.volleymaster.ui.home.PagesActivity
+import eone.grim.volleymaster.ui.main.PagesActivity
 
 class LoginActivity : AppCompatActivity() {
 

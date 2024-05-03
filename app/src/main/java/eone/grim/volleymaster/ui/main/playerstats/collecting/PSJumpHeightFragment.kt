@@ -1,4 +1,4 @@
-package eone.grim.volleymaster.ui.home.playerstats.collecting
+package eone.grim.volleymaster.ui.main.playerstats.collecting
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,10 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import eone.grim.volleymaster.R
-import eone.grim.volleymaster.databinding.FragmentPSAgeBinding
-import eone.grim.volleymaster.databinding.FragmentPSHeightBinding
 import eone.grim.volleymaster.databinding.FragmentPSJumpHeightBinding
-import eone.grim.volleymaster.ui.home.playerstats.collecting.utils.BasicNumberPickerAdapter
+import eone.grim.volleymaster.ui.main.playerstats.collecting.utils.BasicNumberPickerAdapter
 
 class PSJumpHeightFragment : Fragment() {
 

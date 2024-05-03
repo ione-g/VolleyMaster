@@ -1,4 +1,4 @@
-package eone.grim.volleymaster.ui.home.playerstats.collecting
+package eone.grim.volleymaster.ui.main.playerstats.collecting
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

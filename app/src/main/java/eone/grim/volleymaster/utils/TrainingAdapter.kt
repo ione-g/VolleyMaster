@@ -8,7 +8,9 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.os.bundleOf
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.NavController
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import eone.grim.volleymaster.R
@@ -16,13 +18,11 @@ import eone.grim.volleymaster.data.model.TrainingItem
 import eone.grim.volleymaster.viewmodels.TrainingViewModel
 
 class TrainingAdapter(private val trainingList: List<TrainingItem>,
-                      private val listener: TrainingItemListener
+                      private val navController: NavController
 ) :    RecyclerView.Adapter<TrainingAdapter.TrainingViewHolder>() {
 
 
-    interface TrainingItemListener {
-        fun onItemSelected(trainingItem: TrainingItem)
-    }
+
     inner class TrainingViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val trainingImage: ImageView = itemView.findViewById(R.id.trainingIV)
         val trainingName: TextView = itemView.findViewById(R.id.trainingName)
@@ -41,12 +41,12 @@ class TrainingAdapter(private val trainingList: List<TrainingItem>,
         Glide.with(holder.trainingImage.context)
             .load(trainingItem.imageResource)
             .into(holder.trainingImage)
-        holder.trainingImage.setImageURI(Uri.parse(trainingItem.imageResource))
         holder.trainingName.text = trainingItem.trainingName
         holder.trainingDesc.text = trainingItem.trainingDesc
         holder.trainingGoButton.setOnClickListener {
-            listener.onItemSelected(trainingItem)
-
+            navController.popBackStack()
+            val bundle = bundleOf("trainingId" to trainingItem.trainingID)
+            navController.navigate(R.id.action_trainings, bundle)
         }
     }
 

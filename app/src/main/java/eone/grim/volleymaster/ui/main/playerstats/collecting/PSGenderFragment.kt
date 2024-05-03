@@ -1,19 +1,12 @@
-package eone.grim.volleymaster.ui.home.playerstats.collecting
+package eone.grim.volleymaster.ui.main.playerstats.collecting
 
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.WindowManager
-import android.widget.Button
-import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import eone.grim.volleymaster.R
-import eone.grim.volleymaster.databinding.FragmentFirstOnBoardScreenBinding
 import eone.grim.volleymaster.databinding.FragmentPSGenderBinding
 
 
