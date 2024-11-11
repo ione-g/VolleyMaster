@@ -26,12 +26,18 @@ Volley Master is a comprehensive tool for volleyball enthusiasts seeking to impr
 ![Weight picker](https://github.com/user-attachments/assets/263e3ee1-7d00-4c65-97eb-51845f040bcd)
 
 ### Home Screen
+<div style='text-align:center'>
+<img src ='https://github.com/user-attachments/assets/cc581fe2-d100-4e39-bd0d-f50f6b8f031f'/>
+</div>
 ![home](https://github.com/user-attachments/assets/cc581fe2-d100-4e39-bd0d-f50f6b8f031f)
 ### Training Plan
 ![trainings](https://github.com/user-attachments/assets/9be85af7-085a-4f7c-999d-b636fc27cedf)
 ![training_detailed](https://github.com/user-attachments/assets/86695295-0af8-45c5-b91c-c2fc0020ca5c)
 
 ### Animation Example for Training
+<div style='text-align:center'>
+<img src ='https://github.com/user-attachments/assets/8dbca4fd-e6a2-4d7e-8968-545d0385cc44'/>
+</div>
 ![training animation](https://github.com/user-attachments/assets/8dbca4fd-e6a2-4d7e-8968-545d0385cc44)
 
 
