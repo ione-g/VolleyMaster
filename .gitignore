@@ -1,15 +1,77 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+#######################################
+# OS / Editor
+#######################################
 .DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+
+#######################################
+# IntelliJ / Android Studio
+#######################################
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Optional: keep run configs if you use them
+# !.idea/runConfigurations/
+
+#######################################
+# Gradle / Build outputs
+#######################################
+.gradle/
+build/
+**/build/
+captures/
+.externalNativeBuild/
+.cxx/
 local.properties
+
+#######################################
+# Kotlin / JVM
+#######################################
+*.class
+*.log
+
+#######################################
+# Android
+#######################################
+*.apk
+*.aab
+
+#######################################
+# Keystores / Signing (DO NOT COMMIT)
+#######################################
+*.jks
+*.keystore
+*.p12
+*.pem
+*.key
+
+#######################################
+# Secrets / Env files (DO NOT COMMIT)
+#######################################
+.env
+.env.*
+*.env
+secrets/
+secret/
+**/*secret*
+**/*apikey*
+**/*api_key*
+**/*token*
+**/*credentials*
+**/*private_key*
+
+#######################################
+# Google / Firebase (often sensitive)
+#######################################
+google-services.json
+**/google-services.json
+
+# If you ever add Firebase Admin keys (never commit)
+**/*serviceAccount*.json
+**/*firebase*admin*.json
