@@ -72,6 +72,7 @@ secret/
 google-services.json
 **/google-services.json
 
+
 # If you ever add Firebase Admin keys (never commit)
 **/*serviceAccount*.json
 **/*firebase*admin*.json
